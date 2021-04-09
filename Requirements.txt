@@ -1,16 +1,6 @@
-Required Packages:
+spacy
+nltk
+newspaper3k
+spacy download en_core_web_lg
 
-pip install spacy
-pip install nltk
-pip install newspaper3k
-python -m spacy download en_core_web_lg
 
-Code Pre-Requisite:
-
-import nltk
-from nltk import tokenize
-from operator import itemgetter
-import math
-import spacy
-from newspaper import Article
-from spacy.lang.en.stop_words import STOP_WORDS
