@@ -32,33 +32,33 @@ token_list = []
 for token in my_doc:
     token_list.append(token.text)
 
-fs =[] 
+fs =[]
 
 for word in token_list:
     lexeme = nlp.vocab[word]
     if lexeme.is_stop == False:
-        fs.append(word) 
+        fs.append(word)
 
 token_list1 = []
 for token in my_doc1:
     token_list1.append(token.text)
-
-fs1 =[] 
+ 
+fs1 =[]
 
 for word in token_list1:
     lexeme = nlp.vocab[word]
     if lexeme.is_stop == False:
         fs1.append(word)
 
-def listToString(s): 
+def listToString(s):
 
-    str1 = "" 
-  
-    for ele in s: 
+    str1 = ""
+
+    for ele in s:
         str1 += ele
-        str1 +=" "  
-    
-    return str1 
+        str1 +=" "
+
+    return str1
 
 s = listToString(fs)
 s1 = listToString(fs1)
@@ -71,9 +71,6 @@ val=(c.similarity(c1))
 if val>0.9:
     print("Its a Tech Related Article")
 else:
-    print("Its Not a Tech Related Article") 
+    print("Its Not a Tech Related Article")
 
-# THE END    
-
-
-
+# THE END
